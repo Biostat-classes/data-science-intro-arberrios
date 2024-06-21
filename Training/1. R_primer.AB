@@ -103,7 +103,7 @@
 # INTRO TO OBJECTS####
 # Now let's make some objects#
 
-x<-2
+x <- 2
 
 #note here:  <- is equivalent in most cases to =, but style guides recommend
 #using <- (and = can supposedly
@@ -248,8 +248,8 @@ file
 
 #which is then read by the read.csv function
 
-my_dataset <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQJHHRLGmkgJjmngiISdYuwU5EwAv9kFAi96AnKXak_JB81HJUKJye15Ol8FHzYUwAz9DuKQOheNH0i/pub?gid=0&single=true&output=csv", stringsAsFactors = T)
- loaded_data <- read.csv("Training/Data_Example.csv", stringsAsFactors = T)
+my_dataset <- read.csv(file, stringsAsFactors = T)
+
 # Since ~2020 you need to as StringsAsFactors = T to read in characters as factors
 # (what we typically want)
 
